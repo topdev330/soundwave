@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Audio Visualization</title>
+    <link href="data:image/gif;" rel="icon" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="./assets/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+    <!-- wavesurfer.js -->
+    <script src="./assets/wavesurfer.js"></script>
+    <!-- timeline plugin -->
+    <script src="./assets/wavesurfer.timeline.js"></script>
+    <!-- App -->
+    <script src="./assets/app.js"></script>
+    <script src="./assets/trivia.js"></script>
+    <!-- highlight.js for syntax highlighting in this example -->
+    <script src="./assets/jspdf.js"></script>
+</head>
+<body>
+    <div id="showLabel">
+        <p>Please repeate this:</p>
+        <p>"My voice is my password"</p>
+    </div>
+    <div id="demo">
+        <div id="waveform">
+            <div class="progress progress-striped active" id="progress-bar" style="display: none;">
+                <div class="progress-bar progress-bar-info" style="width: 100%;"></div>
+            </div>
+        </div>
+        <div id="wave-timeline">
+        </div>
+        <div class="controls">
+            <button class="btn btn-primary" data-action="play">Play/Pause</button>
+            <button class="btn btn-primary" id="downloadPDF">Download PDF</button>
+        </div>
+    </div>
+</body>
+
+</html>
